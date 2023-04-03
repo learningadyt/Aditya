@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">MenghitungKonfersiSuhu</string>
+
+    <string-array name="Suhu">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+</resources>

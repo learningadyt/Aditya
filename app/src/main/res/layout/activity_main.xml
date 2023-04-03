@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Konversi Suhu"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#E11299"/>
+
+    <TextView
+        android:id="@+id/txtsuhu_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suhu Asal  :"
+        android:layout_below="@id/txt_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/vw_1"
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:layout_toRightOf="@id/txtsuhu_1"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/txt_1"
+        android:layout_marginLeft="5dp"
+        android:background="@color/cardview_shadow_start_color"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtsuhu_1"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txt_1"
+        android:layout_marginTop="15dp"
+        android:entries="@array/Suhu"
+        android:layout_marginRight="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txtsuhu_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suhu Tujuan  :"
+        android:layout_below="@id/txtsuhu_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/vw_2"
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:layout_toRightOf="@id/txtsuhu_2"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/vw_1"
+        android:layout_marginLeft="5dp"
+        android:background="@color/cardview_shadow_start_color"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtsuhu_2"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/vw_1"
+        android:layout_marginTop="15dp"
+        android:entries="@array/Suhu"
+        android:layout_marginRight="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txtinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suhu Inputan  :"
+        android:layout_below="@id/txtsuhu_2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edit_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtinput"
+        android:layout_below="@id/vw_2"
+        android:inputType="number"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/txthasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suhu Konversi  :"
+        android:layout_below="@id/txtinput"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txthasilsuhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hasil"
+        android:layout_toRightOf="@id/txthasil"
+        android:layout_below="@id/edit_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"/>
+
+    <View
+        android:id="@+id/vw_3"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:layout_toRightOf="@id/txthasil"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/edit_1"
+        android:layout_marginLeft="5dp"
+        android:background="@color/cardview_shadow_start_color"/>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Konversi"
+        android:layout_below="@id/vw_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
